@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'VAGRoundedLight';
+    src: url('vrl__.eot');
+    src: url('vrl__.eot') format('embedded-opentype'),
+         url('vrl__.woff') format('woff'),
+         url('vrl__.ttf') format('truetype'),
+         url('vrl__.svg#VAGRoundedLight') format('svg');
+}

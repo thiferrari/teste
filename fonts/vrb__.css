@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'VAGRoundedBold';
+    src: url('vrb__.eot');
+    src: url('vrb__.eot') format('embedded-opentype'),
+         url('vrb__.woff') format('woff'),
+         url('vrb__.ttf') format('truetype'),
+         url('vrb__.svg#VAGRoundedBold') format('svg');
+}

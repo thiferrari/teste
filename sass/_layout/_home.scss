@@ -1,0 +1,255 @@
+
+// HEADER //
+header {
+    width: 100%;
+    display: block;
+
+    .container-banners{
+        width: 100%;
+        .header-full-banner {
+            
+            height: 405px;
+            background-image: url(/img/full-banner-home.png);
+            background-size:cover;
+            background-position: center center;
+            position: relative;
+            display: block;
+            
+            h1 {
+                font-size: 3.3333333333333335rem;
+                color: $default-color;
+                width: 72%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                padding: 84px 0 0 0;
+                span{
+                    font-size: 2.4444444444444446rem;
+                    color: $default-color;
+                    display: block
+                }
+            }
+        }
+        .header-search {
+            width: 65%;
+            margin-top:-50px;
+  
+        }
+    }
+}
+
+
+
+.home-promotion {
+
+    padding: 50px 0;
+    z-index: 9;
+
+    h3 {
+        margin-bottom: 30px;
+    }
+
+    .grid-box {
+        padding: 90px 0 0 0;
+    }
+    .content-box {
+        .box-promotion {
+            height: 450px;
+            border-radius: 40px;
+            @include shandow;
+            overflow: hidden;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+            padding:2px;
+            position: relative;
+
+            .img-container {
+                position: absolute;
+                top: -102px;
+                left: -78px;
+                transition: all .2s ease-in-out;
+   
+            }
+            .text-container {
+                position: absolute;
+                top: 250px;
+                padding: 15px 50px 0 25px;
+                line-height: 1;
+                header {
+                    font-size: 1.7777777777777777rem;
+                }
+                .header-subtitle {
+                    display: block;
+                }
+            }
+            .alert-off {
+                display: none;
+                color: $primary-color;
+                position: absolute;
+                top:300px;
+                right: 10%;
+                font-size: 1.2777777777777777rem;
+
+            }
+        }
+        &:hover {
+            .box-promotion {
+                border: 2px solid $primary-color;
+                transform:scale(1.05);
+                padding:0px;
+                .img-container {
+                    top: -102px;
+                    left: 20%;
+                }
+                .alert-off {
+                    display: block;
+
+                }
+            }
+            .btn-promotion {
+                color:$default-color;
+                background-color: $primary-color;
+                margin: -25px auto 0 auto;
+                float: none;
+            }
+        }
+    }
+
+    .btn-promotion {
+        color:$primary-color;
+        background-color:$default-color;
+        border: 1px solid $primary-color;
+        padding:10px;
+        display:block;
+        border-radius: 40px;
+        text-align: center;
+        width: 200px;
+        display: block;
+        margin: -67px 15px 50px 0px; 
+        float: right;
+        transition: all .3s ease-out;
+        z-index: 10;
+
+    }
+}
+
+.home-custom-packages {
+    
+    .grid-box {
+        padding: 90px 0 20px 0px;
+    }
+    .box-packages {
+        min-width: 200px;
+        color: $default-color;
+        min-height: 300px;
+        border-radius: 60px;
+        background-color: #000;
+        @include center-flex;
+        position: relative;
+        overflow: hidden;
+        img {
+            position: absolute;
+
+        }
+        img.img-bg-packages { 
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            z-index: 1;
+       }
+        .text-container {
+            width: 100%;
+            min-height: 100%;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            img.img-logo {
+                top: 20%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: 0 auto;
+             }
+            .text02 {
+                display: block;
+                position: absolute;
+                bottom: 64px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+    .box-newsletter {
+        width: 95%;
+        min-height: 120px;
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin:0 auto 40px auto;
+        .icon {
+            font-size: 40px;
+            width: 40px;
+            color: #ff1e25;
+        }
+    }
+}
+.home-depositions {
+    background-color: $second-color;
+    position: relative;
+    h3 {
+        position: absolute;
+        margin-top: -25px;
+    }
+    .grid-box {
+        padding: 70px 0 35px 0px;
+    }
+    .box-depositions {
+        border-radius: 40px;
+        text-align: center;
+
+        .img-container {
+            overflow: hidden;
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            display: block;
+            margin: 0 auto;
+
+            img {
+                text-align: center;
+                margin-left: -43px;
+            }
+        }
+        .text-container {
+            h4 {
+                color:$primary-color;
+                font-size: 1.1875rem;
+                padding:10px 0 0 0;
+                margin: 0;
+            }
+            .depositions-sub-title {
+                font-size: 1.125rem;
+                color:$primary-color;
+                display: block;
+                text-align: center;
+                text-transform: initial;
+                padding:0 0 10px 0;
+            }
+            .text-depositions {
+                font-size: 1.125rem;
+                line-height: 1.2;
+                padding: 0px 35px;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.form-control:focus {
+    border-color: $primary-color-lighter ; 
+}
+
+
+.header-search {
+    input {
+        border: 2px solid $primary-color-lighter;
+        border-radius: 40px;
+        padding:5px 20px;
+        height: 60px;
+        font-size:20px;
+        color: $primary-color;
+        text-transform: uppercase;
+    }
+    button {
+        font-size:20px;
+        height: 60px;
+        color: $default-color;
+        background-color: $primary-color-lighter;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: unset;
+        border-bottom-left-radius: unset;
+        padding: 0 40px;
+        text-transform: uppercase;
+        &:hover {
+            color: $default-color;
+            background-color: $primary-color;
+        }
+    }
+}
+
+.home-custom-packages {
+    input {
+        width: 56%;
+        border: 2px solid $primary-color-lighter;
+        border-radius: 40px;
+        padding:5px 20px;
+        height: 60px;
+        font-size:20px;
+        color: $primary-color;
+        text-transform: uppercase;
+        margin: 0 20px;
+        text-transform: initial;
+
+    }
+    button {
+        font-size:20px;
+        height: 60px;
+        color: $default-color;
+        background-color: $primary-color;
+        border-radius: 40px;
+        padding: 0 40px;
+        text-transform: uppercase;
+        border: none;
+        margin: 0 20px;
+
+        &:hover {
+            color: $default-color;
+            background-color: $primary-color;
+        }
+    }
+}
+
+#login {
+    input {
+        border: 2px solid $primary-color-lighter;
+        border-radius: 40px;
+        padding:5px 20px;
+        height: 60px;
+        font-size:20px;
+        color: $primary-color;
+        text-transform: uppercase;
+    }
+
+}
+.checkbox {
+    $checkbox-diameter: 20px;
+    $checkbox-bg: $primary-color-lighter;
+    $checkbox-bg-selected: $main-color;
+    $checkbox-tick: $default-color;
+    position: relative;
+    
+    // circle
+    label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $checkbox-diameter;
+        height: $checkbox-diameter;
+        background-color: $checkbox-bg;
+        border: 1px solid $checkbox-bg;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 
+            background-color 300ms ease, 
+            colour 300ms ease,
+            box-shadow 300ms ease;
+        
+        // tick
+        &:after {
+            content: '';
+            position: absolute;
+            top: 28%;
+            left: 30%;
+            width: 45%;
+            height: 25%;
+            opacity: 0;
+            border-left: 2px solid $checkbox-tick;
+            border-bottom: 2px solid $checkbox-tick;
+            transform: rotate(-45deg);
+            transition: opacity 300ms ease;
+        }
+    }
+    
+    input {
+        visibility: hidden;
+        
+        // selected state bg
+        &:checked + label {
+            background-color: $checkbox-bg-selected;
+            border-color: $checkbox-bg-selected;
+            box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+            
+            // selected state tick
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+
+    span {
+        margin-left: 15px;
+    }
+        // demo colours
+    $colours: (
+        1:	(bg: $primary-color),
+        2:	(bg: #edaa2c),
+        3:	(bg: #1dbf26),
+        4:	(bg: #ed482c),
+        5:	(bg: #ed2c83)
+    );
+    
+    @each $i, $j in $colours {
+        &:nth-child(#{$i}) {
+            input {
+                &:checked + label {
+                    background-color: (map-get($j, 'bg'));
+                    border-color: (map-get($j, 'bg'));
+                }
+            }
+        }
+    }
+}

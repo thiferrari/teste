@@ -1,0 +1,29 @@
+@mixin center-flex {
+
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    
+}
+@mixin shandow {
+    -moz-box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.4); 
+    -webkit-box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.4); 
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.4); 
+    
+}
+
+@mixin shandow-hight {
+    -moz-box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.8); 
+    -webkit-box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.8); 
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.8); 
+}
+
+@mixin shandow-internal {
+    -webkit-box-shadow: 0 6px 12px -6px  rgba(100, 100, 100, 0.8); 
+    -moz-box-shadow: 0 6px 126px -6px  rgba(100, 100, 100, 0.8); 
+    box-shadow: 0 6px 12px -6px   rgba(100, 100, 100, 0.8); 
+    
+}

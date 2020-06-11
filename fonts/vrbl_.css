@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'VAGRoundedBlack';
+    src: url('vrbl_.eot');
+    src: url('vrbl_.eot') format('embedded-opentype'),
+         url('vrbl_.woff') format('woff'),
+         url('vrbl_.ttf') format('truetype'),
+         url('vrbl_.svg#VAGRoundedBlack') format('svg');
+}

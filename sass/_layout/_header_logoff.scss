@@ -1,0 +1,57 @@
+// HEADER //
+header {
+    width: 100%;
+    display: block;
+
+    .header-nav {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5rem 1rem;
+        padding: 20px 0;
+        
+        .navbar-brand {
+            width: 330px;
+            height: 82px;
+            font-size: 1.1111111111111112rem; 
+            color: $primary-color;
+            padding: 32px 0 0 120px;
+            line-height: 20px;
+            background-image: url(/img/logo-lcw.svg);
+            background-size: 40%;
+            background-position: left center;
+            background-repeat: no-repeat;
+            display: inline-block;
+
+            @media (max-width: 991px) {
+                width: 120px;
+                height: 120px;
+                padding: 0;
+                text-indent: -90000px;
+                background-size: 100%;
+
+            }
+        }
+        .link-login {
+            ul {
+                margin: 0;
+
+                li {
+                    .btn-login {
+                        font-size: 1.1111111111111112rem;
+                        color: $default-color;
+                        background-color: $primary-color;
+                        padding: 10px 20px;
+                        border-radius:40px;
+                        &:hover {
+                            background-color: $primary-color-lighter;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
